@@ -1,17 +1,13 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import InnerHeaderBanner from "../components/InnerHeaderBanner";
 import InnerHeader from "../components/InnerHeader";
 import Footer from "../components/Footer";
 import contactHeader from "../img/contact-header.jpg";
 import emailjs from 'emailjs-com'
 
-
-
 const Contact = () => {
-  //submit button enable all fileds submited
   const form = useRef();
   const inputRef = useRef(null);
-
 
   const [inputFields, setInputFields] = useState({
     username: "",
@@ -22,15 +18,13 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
 
-  // destructure all object values
   const { username, email, subject, message } = inputFields;
 
-  // check the form fileds lenth
   const validateValues = (inputValues) => {
     let errors = {};
 
     if (inputValues.username.length < 2) {
-      errors.username = "userName is too short";
+      errors.username = "Username is too short";
     }
     if (inputValues.email.length < 5) {
       errors.email = "Email is too short";
@@ -39,7 +33,7 @@ const Contact = () => {
       errors.subject = "Subject is too short";
     }
     if (inputValues.message.length < 10) {
-      errors.message = "Subject is too short";
+      errors.message = "Message is too short";
     }
 
     return errors;
@@ -54,32 +48,30 @@ const Contact = () => {
     setErrors(validateValues(inputFields));
     setSubmitting(true);
 
-    // email configure
     emailjs.sendForm('service_k80xoyk', 'template_q6z4pl4', form.current, 'yV95_dZd7WA5uN3f7')
       .then((result) => {
-          //console.log(result.text);
-          //console.log("Message sent successfully")
-         
+        console.log("Message sent successfully");
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-      //nputRef.current.value = ''; 
-      setInputFields({username: "",
+
+    setInputFields({
+      username: "",
       email: "",
       subject: "",
-      message: ""})
+      message: ""
+    });
   };
 
   const finishSubmit = () => {
     console.log(inputFields);   
-   //inputRef.current.value = '';
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && submitting) {
       finishSubmit();
-      }
-  }, [errors]);
+    }
+  }, [errors, finishSubmit, submitting]); // Include finishSubmit and submitting in the dependency array
 
   return (
     <>
@@ -100,12 +92,11 @@ const Contact = () => {
                     <h4>Location:</h4>
                     <h5>India:</h5>
                     <p>
-                     Tilak Colony
-                     Bhopal,
-                     Madhya Pradesh, India
+                      Tilak Colony
+                      Bhopal,
+                      Madhya Pradesh, India
                     </p>
                     <br />
-                   
                   </div>
                 </div>
 
@@ -114,9 +105,7 @@ const Contact = () => {
                   <div>
                     <h4>Email:</h4>
                     <p>
-                      <a href="mailto:contact_team@upstartai.in">
-                      contact_team@upstartai.in
-                      </a>
+                      <a href="mailto:contact_team@upstartai.in">contact_team@upstartai.in</a>
                     </p>
                   </div>
                 </div>
@@ -134,7 +123,8 @@ const Contact = () => {
                 <form ref={form} className="php-email-form" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-md-6 form-group">
-                      <input  ref={inputRef}
+                      <input
+                        ref={inputRef}
                         onChange={handleChange}
                         value={username}
                         type="text"
@@ -145,14 +135,15 @@ const Contact = () => {
                           border: errors.username ? "1px solid red" : null,
                         }}
                       />
-                      {errors.username ? (
+                      {errors.username && (
                         <small className="error">
                           Username should be at least 3 characters long
                         </small>
-                      ) : null}
+                      )}
                     </div>
                     <div className="col-md-6 form-group mt-3 mt-md-0">
-                      <input ref={inputRef}
+                      <input
+                        ref={inputRef}
                         onChange={handleChange}
                         value={email}
                         type="email"
@@ -163,30 +154,31 @@ const Contact = () => {
                           border: errors.email ? "1px solid red" : null,
                         }}
                       />
-                      {errors.email ? (
-                        <small className="error">Enter valid email id </small>
-                      ) : null}
+                      {errors.email && (
+                        <small className="error">Enter a valid email address</small>
+                      )}
                     </div>
                   </div>
                   <div className="form-group mt-3">
-                    <input 
-                   ref={inputRef}
+                    <input
+                      ref={inputRef}
                       onChange={handleChange}
                       value={subject}
                       type="text"
                       className="form-control"
                       name="subject"
                       placeholder="Subject"
-                      style={{ border: errors.message ? "1px solid red" : null }}
+                      style={{ border: errors.subject ? "1px solid red" : null }}
                     />
-                    {errors.subject ? (
+                    {errors.subject && (
                       <small className="error">
                         Subject should be at least 5 characters long
                       </small>
-                    ) : null}
+                    )}
                   </div>
                   <div className="form-group mt-3">
-                    <textarea  ref={inputRef}
+                    <textarea
+                      ref={inputRef}
                       onChange={handleChange}
                       value={message}
                       className="form-control"
@@ -197,19 +189,19 @@ const Contact = () => {
                         border: errors.message ? "1px solid red" : null,
                       }}
                     ></textarea>
-                    {errors.message ? (
+                    {errors.message && (
                       <small className="error">
-                        message should be at least 10 characters long
+                        Message should be at least 10 characters long
                       </small>
-                    ) : null}
+                    )}
                   </div>
 
                   <p className="text-center">
-                    {Object.keys(errors).length === 0 && submitting ? (
-                      <div className="alert alert-success p-2 ">
+                    {Object.keys(errors).length === 0 && submitting && (
+                      <div className="alert alert-success p-2">
                         Successfully submitted ✓
                       </div>
-                    ) : null}
+                    )}
                   </p>
 
                   <div className="text-center">
