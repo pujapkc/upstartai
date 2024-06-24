@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import shapeImg from "../img/img-wave2.png";
 import heroImg1 from "../img/header/hero-image-1.jpg";
 import heroImg2 from "../img/header/hero-image-2.jpg";
