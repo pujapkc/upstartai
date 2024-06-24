@@ -3,7 +3,12 @@ import InnerHeaderBanner from "../components/InnerHeaderBanner";
 import InnerHeader from "../components/InnerHeader";
 import Footer from "../components/Footer";
 import contactHeader from "../img/contact-header.jpg";
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
+
+const finishSubmit = (inputFields) => {
+  console.log(inputFields);
+  // Your logic for finishing submission goes here
+};
 
 const Contact = () => {
   const form = useRef();
@@ -63,15 +68,11 @@ const Contact = () => {
     });
   };
 
-  const finishSubmit = () => {
-    console.log(inputFields);   
-  };
-
   useEffect(() => {
     if (Object.keys(errors).length === 0 && submitting) {
-      finishSubmit();
+      finishSubmit(inputFields);
     }
-  }, [errors, finishSubmit, submitting]); // Include finishSubmit and submitting in the dependency array
+  }, [errors, submitting, inputFields]); // Ensure inputFields is included if needed for finishSubmit logic
 
   return (
     <>
