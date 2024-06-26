@@ -1,4 +1,3 @@
-
 import React from "react";
 import careerImage from "../img/careers-img.jpg";
 import careerHeader from "../img/blog-header.jpg";
@@ -58,4 +57,3 @@ const Career = () => {
 };
 
 export default Career;
-

@@ -41,7 +41,7 @@ const ServiceList = () => {
                 </ul>
                   </p>
                   <Link to="/services" className="btn-get-started">
-                    know More
+                    Know More
                   </Link>
                 </div>
               </div>
@@ -68,17 +68,17 @@ const ServiceList = () => {
                   </h4>
                   <p className="description">
                   <ul>
-                 <li>  Inventory / Risk Management </li>
+                 <li>  Inventory Management </li>
                  <li>  Anomaly Detection </li>
                  <li> Marketing Analysis  </li>
                  <li>Revenue / Cost Management </li> 
-                 <li> Customised Dashboards</li> 
-                <li>Fintech and financial Services</li> 
-                 <li>and Many More</li> 
+                 <li> Intelligent Dashboards</li> 
+                <li>Fintech and Financial Services</li> 
+                 <li>Performance Management</li> 
                 </ul>
                   </p>
                   <Link to="/services" className="btn-get-started">
-                    know More
+                    Know More
                   </Link>
                 </div>
               </div>
@@ -110,11 +110,11 @@ const ServiceList = () => {
                  <li>Video Analytics </li> 
                  <li>AR/VR </li> 
                 <li>Proof of concepts </li> 
-                 <li>And Many more</li> 
+                 <li>Geospatial Intelligence</li> 
                 </ul>
                   </p>
                   <Link to="/services" className="btn-get-started">
-                    know More
+                    Know More
                   </Link>
                 </div>
               </div>
@@ -146,11 +146,11 @@ const ServiceList = () => {
                  <li>Security Cameras and Biometric </li> 
                  <li> Data driven IOT Solutions </li> 
                 <li>Migration to Cloud  </li> 
-                 <li>And Many more</li> 
+                 <li>Drones</li> 
                 </ul>{" "}
                   </p>
                   <Link to="/services" className="btn-get-started">
-                    know More
+                    Know More
                   </Link>
                 </div>
               </div>

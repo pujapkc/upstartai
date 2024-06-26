@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from '../img/footer-logo.png'
+import footerLogo from '../img/UpstartAi 1-Photoroom.png'
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 

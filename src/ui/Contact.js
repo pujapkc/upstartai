@@ -82,7 +82,7 @@ const Contact = () => {
         <section id="contact" className="contact">
           <div className="container position-relative" data-aos="fade-up">
             <div className="section-header">
-              <h2> Get in Touch with Us - Let's Create the Future Together! </h2>
+              <h2> Get in Touch </h2><h2>Let's Create the Future Together! </h2>
             </div>
 
             <div className="row gy-4 d-flex justify-content-end">
