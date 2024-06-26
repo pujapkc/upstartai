@@ -39,7 +39,7 @@ const Carousel = () => {
               </span>  */}
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-12">
+          <div className="col-lg-5 col-md-12 col-12">
               <div className="header-image ">
                 <div
                   id="carouselExampleFade"

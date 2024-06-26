@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/company__logo.png";
+import logo from "../img/UpstartAi 3-Photoroom.png";
 //import Navbar from "./Navbar";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";

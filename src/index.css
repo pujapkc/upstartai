@@ -408,8 +408,8 @@ section {
 .header .logo img {
   /*max-height: 40px;*/
   margin-right: 6px;
-  height: 30px;
-  width: 180px;
+  height: 150px;
+  width: 200px;
 }
 
 .header .logo h1 {
@@ -786,6 +786,7 @@ section {
 position: relative;
     padding: 180px 0 100px 0;
     background: var(--primary);
+   
 }
 
 .hero .shape {

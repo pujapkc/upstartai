@@ -26,7 +26,7 @@ const About = () => {
                 <section id="about" className="about">
                     <div className="container" data-aos="fade-up">
                         <div className="section-header">
-                            <h2>Empowering Innovations in Intelligent Solutions</h2>
+                            <h2>Empowering Innovations;</h2><h2> Intelligent Solutions</h2>
                         </div>
                         <div className="row gy-4 align-items-center" data-aos="fade-up">
                             <div className="col-lg-6">
@@ -57,7 +57,7 @@ const About = () => {
                                         <div className="col-xl-12">
                                             <div className="card-body">
                                                 <h4 className="card-title">Vision</h4>
-                                                <p>Our vision is to be the foremost leader in empowering transformative change and delivering exceptional value to our clients and stakeholders through innovative solutions and unparalleled expertise.</p>
+                                                <p>At UpstartAI, we aim to drive innovation and excellence by leveraging our expertise in scalability, change management, digital transformation, and process automation. Collaborating with top-tier partners, we are committed to delivering intelligent solutions that shape a brighter future for our clients and the world.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@ const About = () => {
                                         <div className="col-xl-12">
                                             <div className="card-body">
                                                 <h4 className="card-title">Mission</h4>
-                                                <p>To harness the power of data-driven technologies to solve complex challenges, empower businesses, and foster digital transformation.</p>
+                                                <p>We strive to democratize scalable advanced analytics, making it accessible and actionable for all businesses that may have previously been underserved in this transformative digital era.</p>
                                             </div>
                                         </div>
                                     </div>

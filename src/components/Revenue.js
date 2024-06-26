@@ -12,12 +12,10 @@ const Revenue = () => {
             <div className="row">
               <div className="col-md-7">
                 <h4>About Us</h4>
-                <p> At UpStart AI, we are dedicated to empowering businesses with cutting-edge AI-driven    analytics
-                 solutions. Our mission is to catalyze growth and foster a competitive advantage for our clients by
-                 unlocking the full potential of their data.
+                <p> At UpstartAI, we are dedicated to empowering businesses with cutting-edge AI-driven    analytics solutions. Our mission is to drive growth and create a competitive advantage for our clients by unlocking the full potential of their data.
 
                </p>
-                <p> We strive to democratize advanced analytics, making it accessible and actionable for small businesses that may have previously been underserved in this transformative digital era.</p>
+                <p> We strive to democratize advanced analytics, making it accessible and actionable for businesses that may have previously been underserved in this transformative digital era.</p>
                 <p> At UpstartAI, we redefine creativity with a practical edge. Clients love us for our unique blend of imaginative solutions and tangible results. Expect not just quality but a delightful surprise in the returns we deliver. Let's turn your digital dreams into thriving realities. Elevate your business with UpstartAI today! </p>
                 <Link to="/about" className="btn-get-started">Know More</Link>
               </div>
