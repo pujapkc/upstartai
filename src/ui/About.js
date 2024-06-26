@@ -6,7 +6,7 @@ import softwareVideo from '../img/aboutus.mp4'; // Import your video file
 import InnerHeader from '../components/InnerHeader';
 import InnerHeaderBanner from '../components/InnerHeaderBanner';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+
 
 const About = () => {
     useEffect(() => {
