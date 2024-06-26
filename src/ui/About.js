@@ -26,7 +26,7 @@ const About = () => {
                 <section id="about" className="about">
                     <div className="container" data-aos="fade-up">
                         <div className="section-header">
-                            <h2>Empowering Innovations;</h2><h2> Intelligent Solutions</h2>
+                            <h2>Empowering Innovations</h2><h2> Intelligent Solutions</h2>
                         </div>
                         <div className="row gy-4 align-items-center" data-aos="fade-up">
                             <div className="col-lg-6">
