@@ -9,14 +9,20 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "sans-serif","Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Sansfrancisco","sans-serif","Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
-  --font-primary:  "sans-serif","Montserrat";
-  --font-secondary:  "sans-serif","Raleway";
+  --font-primary:  "Sansfrancisco","sans-serif","Montserrat";
+  --font-secondary:  "Sansfrancisco","sans-serif","Raleway";
 }
 
 
 
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+/* Colors */
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
