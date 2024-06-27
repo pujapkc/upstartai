@@ -2944,7 +2944,7 @@ padding:10px;
   font-size: 15px;
   margin-bottom: 0;
   font-family: var(--font-primary);
-  color: var(--color-secondary);
+  color: black;
 }
 
 .footer .footer-content .social-links a {
