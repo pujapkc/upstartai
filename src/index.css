@@ -424,8 +424,8 @@ section {
 .header .logo img {
   /*max-height: 40px;*/
   margin-right: 6px;
-  height: 150px;
-  width: 200px;
+  height: 60px;
+  width: 240px;
 }
 
 .header .logo h1 {

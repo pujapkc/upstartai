@@ -27,7 +27,7 @@ const Carousel = () => {
               
               <blockquote data-aos="fade-up" data-aos-delay="100">
                 <p>
-                  UpstartAI: One-Stop Solution for All Your Digital Needs.
+                  UpstartAI: One-Stop Solution <br></br>for All Your Digital Needs.
                 </p>
               </blockquote>
               <div className="d-flex align-items-center">

@@ -5,8 +5,12 @@ const ServiceList = () => {
   return (
     <>
       <section id="services-list" className="services-list">
+        
+       
         <div className="container" data-aos="fade-up">
+        
           <div className="section-header">
+          
             <h2>What we do? </h2>
             <p>
             "Empowering businesses with innovative software solutions and cutting-edge technology to drive growth and efficiency."{" "}
@@ -24,7 +28,7 @@ const ServiceList = () => {
                 </div>
                 <div>
                   <h4 className="title">
-                    <Link to="/ervices" className="stretched-link">
+                    <Link to="/services" className="stretched-link">
                     Software Development
                     {" "}
                     </Link>
