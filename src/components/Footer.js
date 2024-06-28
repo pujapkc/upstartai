@@ -109,7 +109,7 @@ const Footer = () => {
                 </script>
               </span>
               &copy;  Copyright
-              <span> UpstartAI </span>. All Rights Reserved
+              <span> UpstartAI Pvt. Ltd</span>. All Rights Reserved
             </div>
           </div>
         </div>

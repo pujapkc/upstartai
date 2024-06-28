@@ -9,6 +9,7 @@ const About = lazy(() => import("./ui/About"));
 const Service = lazy(() => import("./ui/Service"));
 const Login = lazy(() => import("./ui/Login"));
 const Signup = lazy(() => import("./ui/Signup"));
+const Blog = lazy(() => import("./ui/Blog"));
 const NoPage = lazy(() => import("./layout/NoPage"));
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
+            <Route path="blog" element={<Blog />} />
             <Route path="*" element={<NoPage />} />       
           </Routes>
         </Suspense>

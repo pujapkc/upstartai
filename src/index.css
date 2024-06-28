@@ -29,11 +29,11 @@
 }
 /* Colors */
 :root {
-  --color-default: #240750;
-  --color-primary: #1A2130;
+  --color-default: #101011;
+  --color-primary: #151923;
   --color-secondary: #050C9C;
   
-  --primary: #1A2130;
+  --primary: #0f1114;
   --primary-dark: #050C9C;
   --primary-light: #d8e4ff;
   
@@ -64,7 +64,7 @@
   --black: #1d1d1d;
   --dark-1: #2d2d2d;
   --dark-2: #4d4d4d;
-  --dark-3: #6d6d6d;
+  --dark-3: #121111;
   
   --gray-1: #8d8d8d;
   --gray-2: #adadad;
@@ -1075,6 +1075,67 @@ section {
 /*.services-list {
 	background:var(--white)
 }*/
+
+/*--------------------------------------------------------------
+# Services gradient
+--------------------------------------------------------------*/
+.gradient-1 {
+  background: linear-gradient(135deg, #faf8f5, #555553);
+  border-radius: 25px;
+  color: black;
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, #faf8f5, #555553);
+  border-radius: 25px;
+  color: black;
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, #faf8f5, #555553);
+  border-radius: 25px;
+  color: black;
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg,#faf8f5, #555553);
+  border-radius: 25px;
+  color: black;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 80%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.btn-get-started {
+  margin-top: 10px;
+  background: #111112;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.stretched-link {
+  position: relative;
+}
+
+.flex-shrink-0 {
+  margin-bottom: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Services List gradient end
+--------------------------------------------------------------*/
 
 .services-list .service-item {
   position: relative;    
@@ -2953,7 +3014,7 @@ padding:10px;
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: rgba(22, 26, 29, 0.5);
   margin-right: 10px;
   transition: 0.3s;
   display: flex;

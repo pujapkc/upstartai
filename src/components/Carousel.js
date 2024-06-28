@@ -1,5 +1,5 @@
 import React from "react";
-import shapeImg from "../img/img-wave2.png";
+//import shapeImg from "../img/img-wave2.png";
 import { Link } from "react-router-dom";
 
 
@@ -11,7 +11,7 @@ const Carousel = () => {
           <source src={require('../img/upstartai-video.mp4')} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <img className="shape" src={shapeImg} alt="#" />
+        {/*<img className="shape" src={shapeImg} alt="#" />*/}
         <div className="container">
           <div
             className="row align-items-center"
@@ -21,10 +21,10 @@ const Carousel = () => {
             <div className="col-lg-7 col-md-12 col-12">
              {/* <h2 data-aos="fade-up">
                 Harness Data To Empower Your Business
-              </h2>*/}
+              </h2>
               <br></br>
               <br></br>
-              
+              */}
               <blockquote data-aos="fade-up" data-aos-delay="100">
                 <p>
                   UpstartAI: One-Stop Solution <br></br>for All Your Digital Needs.
@@ -36,6 +36,8 @@ const Carousel = () => {
                 </Link>
               </div>
             </div>
+
+            
             {/* Hide or remove this part to hide carousel images 
             <div className="col-lg-5 col-md-12 col-12">
               <div className="header-image d-none">
@@ -108,6 +110,7 @@ const Carousel = () => {
              End of hidden carousel part */}
           </div>
         </div>
+        
       </section>
     </>
   );

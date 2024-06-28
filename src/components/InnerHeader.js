@@ -81,6 +81,9 @@ const InnerHeader = () => {
             <Link to ="/contact"  className={splitLocation[1] === "contact" ? "active" : ""}> Contact Us</Link>
             </li>
             {/* <li>
+            <Link to ="/blog"  className={splitLocation[1] === "blog" ? "active" : ""}> Blog</Link>
+            </li>
+            <li>
            <Link to ="/login"  className={splitLocation[1] === "login" ? "active" : ""}> Login</Link>
             </li>
             <li>
