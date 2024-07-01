@@ -1,5 +1,5 @@
 import React from "react";
-//import shapeImg from "../img/img-wave2.png";
+//import shapeImg from "../img/img-wave2-with-centered-text.png";
 import { Link } from "react-router-dom";
 
 
