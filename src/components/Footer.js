@@ -19,15 +19,15 @@ const Footer = () => {
                 Empowering businesses with innovative software solutions and cutting-edge technology to drive growth and efficiency.
                 </p>
                 <div className="social-links d-flex  mt-3">
-                  <Link to="/" className="twitter">
-                    <i className="bi bi-twitter"></i>
+                  <Link to="https://www.instagram.com/upstartai?igsh=MXc2Zm55Y250amZ0eg==" className="instagram">
+                    <i className="bi bi-instagram"></i>
                   </Link>
 
                   <Link to="/" className="facebook">
                     <i className="bi bi-facebook"></i>
                   </Link>
                   
-                  <Link to ="https://www.linkedin.com/company/symbiotic-infotech-pvt-ltd/" className="linkedin">
+                  <Link to ="https://www.linkedin.com/company/upstartai-zattech/about/" className="linkedin">
                     <i className="bi bi-linkedin"></i>
                   </Link>
                 </div>
