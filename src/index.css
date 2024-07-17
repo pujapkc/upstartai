@@ -794,12 +794,43 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Hero blockquote Section start
+--------------------------------------------------------------*/
+/* General blockquote styling */
+.hero blockquote {
+  padding-left: 20px;
+  border-left: 2px solid rgba(255, 255, 255, .7);
+  margin: 40px 0;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .hero blockquote {
+    display: none; /* Hide blockquote on mobile devices */
+  }
+
+  
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Hero blockquote Section end
+--------------------------------------------------------------*/
+
+
+
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding: 180px 0 100px 0;
+  padding: 200px 0 100px 0;
   overflow: hidden;
 }
 
@@ -840,28 +871,6 @@ section {
   text-transform: capitalize;
 }
 
-/*--------------------------------------------------------------
-# Hero blockquote Section start
---------------------------------------------------------------*/
-/* General blockquote styling */
-.hero blockquote {
-  padding-left: 20px;
-  border-left: 2px solid rgba(255, 255, 255, .7);
-  margin: 40px 0;
-}
-
-/* Mobile-specific styling to hide blockquote */
-@media (max-width: 768px) {
-  .hero blockquote {
-    display: none; /* Hide blockquote on mobile devices */
-  }
-}
-
-
-
-/*--------------------------------------------------------------
-# Hero blockquote Section end
---------------------------------------------------------------*/
 .hero p {
   color: var(--white);
   opacity: 0.7;
@@ -939,7 +948,7 @@ section {
   }
 
   .hero {
-    padding: 100px 0 60px 0;
+    padding: 300px 0 120px 0;
   }
 
   .hero .header-image {
@@ -960,13 +969,16 @@ section {
 .carousel-indicators {   
     bottom: -25px;
 }
-	
-/*.header-image img{
-	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
--clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	/* Mobile-specific styling to increase the height of .hero */
+@media (max-width: 768px) {
+  .hero {
+    padding: 200px 0 130px 0; /* Increase padding to increase height */
+  }
+}
 
-}*/
-
+/*--------------------------------------------------------------
+# hero section end
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Why Choose Us Section
 --------------------------------------------------------------*/
