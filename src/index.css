@@ -840,12 +840,28 @@ section {
   text-transform: capitalize;
 }
 
+/*--------------------------------------------------------------
+# Hero blockquote Section start
+--------------------------------------------------------------*/
+/* General blockquote styling */
 .hero blockquote {
   padding-left: 20px;
   border-left: 2px solid rgba(255, 255, 255, .7);
   margin: 40px 0;
 }
 
+/* Mobile-specific styling to hide blockquote */
+@media (max-width: 768px) {
+  .hero blockquote {
+    display: none; /* Hide blockquote on mobile devices */
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero blockquote Section end
+--------------------------------------------------------------*/
 .hero p {
   color: var(--white);
   opacity: 0.7;
