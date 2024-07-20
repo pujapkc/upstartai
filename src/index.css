@@ -1277,15 +1277,18 @@ blog component slider start
 # posts component  end
 --------------------------------------------------------------*/
 
+
+
+
 /* Keyframes for scale and rotate animation */
 @keyframes scaleRotate {
   0% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
+    transform: scale(0.95) rotate(0deg);
+    opacity: 0;
   }
   50% {
     transform: scale(1.05) rotate(5deg);
-    opacity: 0.8;
+    opacity: 0.7;
   }
   100% {
     transform: scale(1) rotate(0deg);
@@ -1303,12 +1306,14 @@ blog component slider start
   border: 1px solid var(--gray-4);
   background-color: var(--white);
   overflow: hidden;
+  opacity: 0; /* Initially hidden for animation */
+  transform: scale(0.95) rotate(0deg); /* Initially scaled down */
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover effect with scale and rotate animation */
-.services-list .single-service:hover {
-  box-shadow: var(--shadow-4);
+/* Animated class to be added when in view */
+.services-list .single-service.animate {
+  opacity: 1;
   animation: scaleRotate 0.6s ease-out;
 }
 
@@ -1385,6 +1390,7 @@ blog component slider start
     padding: 35px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Call To Action Section
