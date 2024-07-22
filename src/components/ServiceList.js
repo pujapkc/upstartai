@@ -65,7 +65,7 @@ const ServiceList = () => {
                         {index === 0 ? 'Software Development' : index === 1 ? 'Analytics and Reporting' : index === 2 ? 'AI/ML Solution' : 'Embedded Hardware'}
                       </Link>
                     </h4>
-                    <p className="description">
+                    <p className="description-list">
                       <ul>
                         {index === 0 && <>
                           <li> Website Designing and Development </li>

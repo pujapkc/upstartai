@@ -1391,11 +1391,17 @@ blog component slider start
 .services-list .service-item .title a:hover {
   color: var(--color-primary);
 }
-
+/* for service page description*/
 .services-list .service-item .description {
   line-height: 1.5;
   font-size: 1rem;
-  color: var(--color-white);
+  color: black;
+}
+/* for service list description*/
+.services-list .service-item .description-list {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: white;
 }
 
 .services-list .single-service .serial {
