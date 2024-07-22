@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-
 const ServiceList = () => {
   const [isVisible, setIsVisible] = useState({});
   const serviceRefs = useRef([]);
@@ -52,7 +51,7 @@ const ServiceList = () => {
                 key={index}
                 className="col-lg-6 col-md-6 service-item d-flex"
                 data-aos="fade-up"
-                data-aos-delay={`${(index + 1) * 100}`}
+                data-aos-delay={`${index * 50}`}
               >
                 <div
                   className={`single-service card gradient-${index + 1} d-flex flex-column h-100 ${isVisible[index] ? 'animate' : ''}`}
