@@ -17,8 +17,6 @@ const ServiceList = () => {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
           ) {
             setIsVisible(prev => ({ ...prev, [index]: true }));
-          } else {
-            setIsVisible(prev => ({ ...prev, [index]: false }));
           }
         }
       });
@@ -38,7 +36,7 @@ const ServiceList = () => {
   return (
     <>
       <section id="services-list" className="services-list">
-        <div className="container" data-aos="fade-up">
+        <div className="container">
           <div className="section-header">
             <h2>What we do?</h2>
             <p>
@@ -50,11 +48,9 @@ const ServiceList = () => {
               <div
                 key={index}
                 className="col-lg-6 col-md-6 service-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay={`${index * 50}`}
               >
                 <div
-                  className={`single-service card gradient-${index + 1} d-flex flex-column h-100 ${isVisible[index] ? 'animate' : ''}`}
+                  className={`single-service card gradient-${index + 1} d-flex flex-column h-100 ${isVisible[index] ? 'animate animated' : ''}`}
                   ref={el => (serviceRefs.current[index] = el)}
                 >
                   <div className="icon flex-shrink-0">

@@ -1356,6 +1356,12 @@ blog component slider start
   animation: scaleRotate 0.8s ease-out; /* Increased duration for smoother animation */
 }
 
+/* Ensure that once animated, the card remains in its final state */
+.services-list .single-service.animated {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
 /* Additional styles for section header and service items */
 .section-header p {
   font-size: 18px;
